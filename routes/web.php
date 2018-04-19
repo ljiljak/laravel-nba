@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/teams', 'TeamsController@index')->name('all-teams');
 
 Route::get('/teams/{id}', ['as' => 'single-team', 'uses' => 'TeamsController@show']);
+
+Route::get('/players', 'PlayersController@index')->name('all-players');
+
+Route::get('/players/{id}', ['as' => 'single-player', 'uses' => 'PlayersController@show']);
