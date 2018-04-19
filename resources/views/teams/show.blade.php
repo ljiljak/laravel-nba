@@ -1,3 +1,6 @@
+@extends('layouts.master')
+
+@section ('content')
 
 <p>{{ $team->name }}</p>
 <p>{{ $team->email }}</p>
@@ -11,3 +14,6 @@
 		</li>               
     @endforeach
 </ul>
+
+
+@endsectrion

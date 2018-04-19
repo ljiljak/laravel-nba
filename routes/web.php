@@ -22,3 +22,7 @@ Route::get('/teams/{id}', ['as' => 'single-team', 'uses' => 'TeamsController@sho
 Route::get('/players', 'PlayersController@index')->name('all-players');
 
 Route::get('/players/{id}', ['as' => 'single-player', 'uses' => 'PlayersController@show']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

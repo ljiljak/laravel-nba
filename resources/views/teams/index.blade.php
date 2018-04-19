@@ -1,10 +1,12 @@
+@extends('layouts.master')
 
 
-    @foreach($teams as $team)
-        
-            <p>
-                <a href="/teams/{{ $team->id }}">{{ $team->name }}</a>   
-            </p> 
-           
-    @endforeach
+@section ('content')
+@foreach($teams as $team)     
+	<p>
+		<a href="/teams/{{ $team->id }}">{{ $team->name }}</a>   
+	</p> 
+@endforeach
+
+@endsection
     
