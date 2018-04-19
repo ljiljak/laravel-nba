@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace NBA;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -28,7 +28,7 @@ class User extends Authenticatable
     ];
 
     public function teams() {
-        return $this->hasMany('App\User');
+        return $this->hasMany('NBA\User');
     }
 
 }

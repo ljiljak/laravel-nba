@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace NBA;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class Team extends Model
     	return $this->hasMany(Player::class);
     }
     public function user() {
-    	return $this->belongsTo ('App\Team');
+    	return $this->belongsTo ('NBA\Team');
     }
 }

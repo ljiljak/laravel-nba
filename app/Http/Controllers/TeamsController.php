@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace NBA\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Team;
+use NBA\Team;
 
 class TeamsController extends Controller
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace NBA\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Player;
+use NBA\Player;
 
 class PlayersController extends Controller
 {
     public function index() {
-    	$players = Player::with('teams')->get();
+    	$players = Player::with('team')->get();
 
     	return view('players.index', compact('players'));
     	
